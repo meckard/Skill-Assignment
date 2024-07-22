@@ -100,6 +100,10 @@ html {
 	/* UI properties */
 	background: #f6f7f8 0% 0% no-repeat padding-box;
 	opacity: 1;
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
 }
 
 nav {
@@ -108,10 +112,10 @@ nav {
 	left: 18px;
 	width: 1564px;
 	height: 72px;
-	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 18px;
 
 	/* UI properties */
 	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -321,7 +325,7 @@ nav {
 	background: var(--unnamed-color-ededed) 0% 0% no-repeat padding-box;
 	background: #ededed 0% 0% no-repeat padding-box;
 	opacity: 1;
-  margin-right: 12px;
+	margin-right: 12px;
 }
 
 .settingsicon {
@@ -340,5 +344,163 @@ nav {
 	width: 4px;
 	height: 18px;
 	background: transparent url("Images/more.png") 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.patientpanel {
+	/* Layout Properties */
+	top: 122px;
+	left: 18px;
+	width: 367px;
+	height: 1054px;
+	/* UI Properties */
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border-radius: 16px;
+	opacity: 1;
+	margin-top: 32px;
+	overflow-y: scroll;
+}
+
+.panelheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 800;
+}
+
+.panelheadertext {
+	top: 142px;
+	left: 38px;
+	width: 100px;
+	height: 33px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
+		var(--unnamed-font-size-24) / var(--unnamed-line-spacing-33)
+		var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal 800 24px/33px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	margin-left: 20px;
+}
+
+.searchIcon {
+	top: 150px;
+	left: 347px;
+	width: 18px;
+	height: 18px;
+	background: transparent url("Images/searchIcon.png") 0% 0% no-repeat
+		padding-box;
+	opacity: 1;
+	margin-right: 20px;
+}
+
+.listpatient {
+	/* Layout Properties */
+	top: 215px;
+	left: 38px;
+	width: 317px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	/* UI Properties */
+	opacity: 1;
+	margin: 32px 0 0 20px;
+}
+
+.patientlistinfo {
+	top: 218px;
+	left: 98px;
+	width: 97px;
+	height: 42px;
+	opacity: 1;
+	margin-right: 142px;
+}
+
+.patientlistinfo p {
+	margin: 0;
+}
+
+.patientname {
+	top: 218px;
+	left: 98px;
+	width: 97px;
+	height: 19px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
+		var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal bold 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	text-wrap: nowrap;
+}
+
+.patientagegender {
+	top: 241px;
+	left: 98px;
+	width: 66px;
+	height: 19px;
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-707070);
+	text-align: left;
+	font: normal normal normal 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #707070;
+	opacity: 1;
+	display: flex;
+	text-wrap: nowrap;
+}
+
+.panelprofileimg {
+	top: 215px;
+	left: 38px;
+	width: 48px;
+	height: 48px;
+	opacity: 1;
+	margin-right: 12px;
+}
+
+.morehorizontal {
+	top: 237px;
+	left: 337px;
+	width: 18px;
+	height: 4px;
+	background: transparent url("Images/moreHorizontal.png") 0% 0% no-repeat
+		padding-box;
+	opacity: 1;
+}
+
+.patientpanel::-webkit-scrollbar {
+	top: 215px;
+	left: 375px;
+	width: 6px;
+	border-radius: 3px;
+	opacity: 1;
+}
+
+.patientpanel::-webkit-scrollbar-thumb {
+	background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+	background: #072635 0% 0% no-repeat padding-box;
+}
+
+.patientpanel::-webkit-scrollbar-track {
+	/* Layout Properties */
+	top: 215px;
+	left: 375px;
+	width: 6px;
+	height: 941px;
+	/* UI Properties */
+	background: #e3e4e6 0% 0% no-repeat padding-box;
+	border-radius: 3px;
 	opacity: 1;
 }
