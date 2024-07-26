@@ -398,6 +398,10 @@ nav {
 	margin-right: 20px;
 }
 
+.patientdetails {
+	display: flex;
+}
+
 .listpatient {
 	/* Layout Properties */
 	top: 215px;
@@ -502,5 +506,67 @@ nav {
 	/* UI Properties */
 	background: #e3e4e6 0% 0% no-repeat padding-box;
 	border-radius: 3px;
+	opacity: 1;
+}
+
+.diagnosishistory {
+	top: 122px;
+	left: 417px;
+	width: 766px;
+	height: 673px;
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border-radius: 16px;
+	opacity: 1;
+	margin: 32px;
+}
+
+.diagnosishistory h2 {
+	margin: 20px;
+}
+
+.bphistory {
+	top: 215px;
+	left: 437px;
+	width: 726px;
+	height: 298px;
+	background: #f4f0fe 0% 0% no-repeat padding-box;
+	border-radius: 12px;
+	opacity: 1;
+	display: flex;
+}
+
+.bpchart {
+	width: 447px;
+	height: 205px;
+	opacity: 1;
+}
+
+.bpchart h3 {
+	padding: 16px 0 20px 16px;
+	margin: 0px;
+}
+
+.legend {
+	top: 231px;
+	left: 939px;
+	width: 149px;
+	height: 84px;
+	opacity: 1;
+}
+
+.systolic {
+	top: 231px;
+	left: 939px;
+	width: 149px;
+	height: 84px;
+	opacity: 1;
+}
+
+.diastolic {
+	top: 231px;
+	left: 939px;
+	width: 149px;
+	height: 84px;
 	opacity: 1;
 }

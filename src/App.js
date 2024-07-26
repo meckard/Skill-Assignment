@@ -26,7 +26,7 @@ function App() {
 
 			setPatientList(json);
 		};
-    getPatients()
+		getPatients();
 	}, []);
 
 	return (
@@ -35,8 +35,10 @@ function App() {
 				<Navbar />
 			</header>
 			<body>
-				<PatientPanel patientlist={patientlist} />
-        <PatientHistory patientlist={patientlist} />
+				<div className="patientdetails">
+					<PatientPanel patientlist={patientlist} />
+					<PatientHistory patientlist={patientlist} />
+				</div>
 			</body>
 		</div>
 	);
