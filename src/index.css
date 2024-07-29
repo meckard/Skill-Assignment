@@ -89,15 +89,10 @@
 	font-weight: 200;
 	font-style: normal;
 }
-
+/* general */
 html {
-	/* layout properties */
-	top: 0px;
-	left: 0px;
 	width: 1600px;
 	height: 1195px;
-
-	/* UI properties */
 	background: #f6f7f8 0% 0% no-repeat padding-box;
 	opacity: 1;
 	font-family: "Manrope", sans-serif;
@@ -106,18 +101,14 @@ html {
 	font-style: normal;
 }
 
+/* nav */
 nav {
-	/* layout properties */
-	top: 18px;
-	left: 18px;
 	width: 1564px;
 	height: 72px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 18px;
-
-	/* UI properties */
 	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
 	background: #ffffff 0% 0% no-repeat padding-box;
 	border-radius: 70px;
@@ -125,42 +116,27 @@ nav {
 }
 
 .logo {
-	/* layout properties */
-	top: 30px;
-	left: 50px;
 	width: 211px;
 	height: 48px;
 	margin-left: 32px;
-
-	/* UI properties */
 	background: transparent url("Images/TestLogo.svg") 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
 
 .nav-links {
-	/* layout properties */
-	top: 23px;
-	left: 473px;
 	width: 663px;
 	height: 63px;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-
-	/* UI properties */
 	opacity: 1;
 	list-style: none;
 }
 
 .nav-links li {
-	/* layout properties */
-	top: 45px;
-	left: 473px;
 	width: 88px;
 	display: flex;
 	align-items: center;
-
-	/* UI properties */
 	opacity: 1;
 	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
 		var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
@@ -175,16 +151,12 @@ nav {
 }
 
 .overview {
-	top: 45px;
-	left: 498px;
 	width: 63px;
 	height: 19px;
 }
 
 .nav-item img {
 	margin-right: 9px;
-
-	/* UI Properties */
 	opacity: 1;
 }
 
@@ -194,15 +166,11 @@ nav {
 }
 
 .patients {
-	top: 45px;
-	left: 649px;
 	width: 57px;
 	height: 19px;
 }
 
 .person {
-	top: 46px;
-	left: 617px;
 	width: 24px;
 	height: 17px;
 	background: transparent url("Images/group_FILL0_wght300_GRAD0_opsz24.svg") 0%
@@ -210,8 +178,6 @@ nav {
 }
 
 .schedule {
-	top: 45px;
-	left: 785px;
 	width: 64px;
 	height: 19px;
 }
@@ -223,8 +189,6 @@ nav {
 }
 
 .message {
-	top: 45px;
-	left: 916px;
 	width: 61px;
 	height: 19px;
 }
@@ -236,8 +200,6 @@ nav {
 }
 
 .transactions {
-	top: 45px;
-	left: 1047px;
 	width: 89px;
 	height: 19px;
 }
@@ -249,8 +211,6 @@ nav {
 }
 
 .nav-profile {
-	top: 32px;
-	left: 1309px;
 	width: 241px;
 	height: 44px;
 	opacity: 1;
@@ -261,8 +221,6 @@ nav {
 }
 
 .drimage {
-	top: 32px;
-	left: 1309px;
 	width: 44px;
 	height: 44px;
 	background: transparent url("Images/Navprofilepic.png") 0% 0% no-repeat
@@ -272,8 +230,6 @@ nav {
 }
 
 .drinfo {
-	top: 35px;
-	left: 1361px;
 	height: 38px;
 	opacity: 1;
 	margin-right: 11px;
@@ -284,8 +240,6 @@ nav {
 }
 
 .drname {
-	top: 35px;
-	left: 1361px;
 	width: 119px;
 	height: 19px;
 	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
@@ -301,8 +255,6 @@ nav {
 }
 
 .specialty {
-	top: 54px;
-	left: 1361px;
 	height: 19px;
 	width: 130px;
 	font: var(--unnamed-font-style-normal) normal
@@ -318,8 +270,6 @@ nav {
 }
 
 .divider {
-	top: 32px;
-	left: 1502px;
 	width: 1px;
 	height: 44px;
 	background: var(--unnamed-color-ededed) 0% 0% no-repeat padding-box;
@@ -329,8 +279,6 @@ nav {
 }
 
 .settingsicon {
-	top: 44px;
-	left: 1515px;
 	width: 19px;
 	height: 20px;
 	background: transparent url("Images/Settings.png") 0% 0% no-repeat padding-box;
@@ -339,21 +287,16 @@ nav {
 }
 
 .moreicon {
-	top: 45px;
-	left: 1546px;
 	width: 4px;
 	height: 18px;
 	background: transparent url("Images/more.png") 0% 0% no-repeat padding-box;
 	opacity: 1;
 }
 
+/*patient panel */
 .patientpanel {
-	/* Layout Properties */
-	top: 122px;
-	left: 18px;
 	width: 367px;
 	height: 1054px;
-	/* UI Properties */
 	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
 	background: #ffffff 0% 0% no-repeat padding-box;
 	border-radius: 16px;
@@ -370,8 +313,6 @@ nav {
 }
 
 .panelheadertext {
-	top: 142px;
-	left: 38px;
 	width: 100px;
 	height: 33px;
 	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
@@ -388,8 +329,6 @@ nav {
 }
 
 .searchIcon {
-	top: 150px;
-	left: 347px;
 	width: 18px;
 	height: 18px;
 	background: transparent url("Images/searchIcon.png") 0% 0% no-repeat
@@ -403,21 +342,15 @@ nav {
 }
 
 .listpatient {
-	/* Layout Properties */
-	top: 215px;
-	left: 38px;
 	width: 317px;
 	height: 48px;
 	display: flex;
 	align-items: center;
-	/* UI Properties */
 	opacity: 1;
 	margin: 32px 0 0 20px;
 }
 
 .patientlistinfo {
-	top: 218px;
-	left: 98px;
 	width: 97px;
 	height: 42px;
 	opacity: 1;
@@ -429,8 +362,6 @@ nav {
 }
 
 .patientname {
-	top: 218px;
-	left: 98px;
 	width: 97px;
 	height: 19px;
 	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
@@ -447,8 +378,6 @@ nav {
 }
 
 .patientagegender {
-	top: 241px;
-	left: 98px;
 	width: 66px;
 	height: 19px;
 	font: var(--unnamed-font-style-normal) normal
@@ -466,8 +395,6 @@ nav {
 }
 
 .panelprofileimg {
-	top: 215px;
-	left: 38px;
 	width: 48px;
 	height: 48px;
 	opacity: 1;
@@ -475,8 +402,6 @@ nav {
 }
 
 .morehorizontal {
-	top: 237px;
-	left: 337px;
 	width: 18px;
 	height: 4px;
 	background: transparent url("Images/moreHorizontal.png") 0% 0% no-repeat
@@ -485,8 +410,6 @@ nav {
 }
 
 .patientpanel::-webkit-scrollbar {
-	top: 215px;
-	left: 375px;
 	width: 6px;
 	border-radius: 3px;
 	opacity: 1;
@@ -498,20 +421,15 @@ nav {
 }
 
 .patientpanel::-webkit-scrollbar-track {
-	/* Layout Properties */
-	top: 215px;
-	left: 375px;
 	width: 6px;
 	height: 941px;
-	/* UI Properties */
 	background: #e3e4e6 0% 0% no-repeat padding-box;
 	border-radius: 3px;
 	opacity: 1;
 }
 
+/* diagnosis history block */
 .diagnosishistory {
-	top: 122px;
-	left: 417px;
 	width: 766px;
 	height: 673px;
 	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -523,23 +441,67 @@ nav {
 
 .diagnosishistory h2 {
 	margin: 20px;
+	padding-top: 20px;
 }
 
 .bphistory {
-	top: 215px;
-	left: 437px;
 	width: 726px;
 	height: 298px;
 	background: #f4f0fe 0% 0% no-repeat padding-box;
 	border-radius: 12px;
 	opacity: 1;
 	display: flex;
+	margin-left: 20px;
 }
 
 .bpchart {
 	width: 447px;
 	height: 205px;
 	opacity: 1;
+	margin-right: 48px;
+}
+
+.bpheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 431px;
+}
+
+.chartfilter p {
+	width: 92px;
+	height: 19px;
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: right;
+	font: normal normal normal 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+}
+
+.chartfilter img {
+	width: 11px;
+	height: 6px;
+	background: transparent url("./Images/expand_more.svg") 0% 0% no-repeat
+		padding-box;
+	opacity: 1;
+	margin-left: 16px;
+}
+
+.chartfilter {
+	display: flex;
+	width: 119px;
+	height: 19px;
+	opacity: 1;
+	align-items: center;
+}
+
+#linechart {
+	margin-left: 16px;
 }
 
 .bpchart h3 {
@@ -548,25 +510,370 @@ nav {
 }
 
 .legend {
-	top: 231px;
-	left: 939px;
 	width: 149px;
 	height: 84px;
 	opacity: 1;
 }
 
 .systolic {
-	top: 231px;
-	left: 939px;
+	width: 149px;
+	height: 84px;
+	opacity: 1;
+	margin-top: 16px;
+}
+
+.systoliclegend {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-bottom: 8px;
+}
+
+.systoliclegend h4 {
+	width: 55px;
+	height: 19px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
+		var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal bold 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	text-transform: capitalize;
+	opacity: 1;
+	margin: 0;
+}
+
+.systolicdot {
+	width: 14px;
+	height: 14px;
+	border: 1px solid var(--unnamed-color-ffffff);
+	background: #e66fd2 0% 0% no-repeat padding-box;
+	border: 1px solid #ffffff;
+	opacity: 1;
+	border-radius: 50%;
+	margin-right: 4px;
+}
+
+.systolicrate {
+	width: 38px;
+	height: 30px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		22px/30px var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal bold 22px/30px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	text-transform: capitalize;
+	opacity: 1;
+}
+
+.systolicaverage {
+	width: 131px;
+	height: 19px;
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal normal 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	margin: 8px 0 16px 0;
+	text-wrap: nowrap;
+}
+
+.arrowup {
+	margin-right: 8px;
+}
+
+.bpdivider {
+	width: 208px;
+	height: 1px;
+	background: var(--unnamed-color-cbc8d4) 0% 0% no-repeat padding-box;
+	background: #cbc8d4 0% 0% no-repeat padding-box;
+	opacity: 1;
+	margin: 16px 0;
+}
+
+.diastolic {
 	width: 149px;
 	height: 84px;
 	opacity: 1;
 }
 
-.diastolic {
-	top: 231px;
-	left: 939px;
-	width: 149px;
-	height: 84px;
+.diastoliclegend {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	margin-bottom: 8px;
+}
+
+.diastolicdot {
+	width: 14px;
+	height: 14px;
+	border: 1px solid var(--unnamed-color-ffffff);
+	background: #8c6fe6 0% 0% no-repeat padding-box;
+	border: 1px solid #ffffff;
 	opacity: 1;
+	border-radius: 50%;
+	margin-right: 4px;
+}
+
+.diastolic h4 {
+	width: 55px;
+	height: 19px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-14) / var(--unnamed-line-spacing-19)
+		var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal bold 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	text-transform: capitalize;
+	opacity: 1;
+	margin: 0;
+}
+
+.diastolicrate {
+	width: 38px;
+	height: 30px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		22px/30px var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal bold 22px/30px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	text-transform: capitalize;
+	opacity: 1;
+}
+
+.diastolicaverage {
+	width: 131px;
+	height: 19px;
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal normal 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	margin: 8px 0 16px 0;
+	text-wrap: nowrap;
+}
+
+.patientstatblocks {
+	display: flex;
+}
+
+.statblock {
+	width: 228px;
+	height: 242px;
+	opacity: 1;
+	margin: 20px 0 0 20px;
+}
+
+.statblock div {
+	border-radius: 12px;
+}
+
+.respiratory {
+	background: #e0f3fa 0% 0% no-repeat padding-box;
+}
+
+.temperature {
+	background: #ffe6e9 0% 0% no-repeat padding-box;
+}
+
+.heartRate {
+	background: #ffe6f1 0% 0% no-repeat padding-box;
+}
+
+.statblockimage {
+	margin: 16px 0 0 16px;
+}
+
+.statblockname {
+	width: 125px;
+	height: 22px;
+	font: var(--unnamed-font-style-normal) normal medium 16px/22px
+		var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal medium 16px/22px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	text-transform: capitalize;
+	opacity: 1;
+	font-weight: bold;
+	margin-left: 16px;
+}
+
+.statblockvalue {
+	width: 109px;
+	height: 41px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
+		30px/41px var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal 800 30px/41px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	text-wrap: nowrap;
+	margin: 0 0 17px 16px;
+}
+
+.statblocklevel {
+	margin: 0 0 0 16px;
+	padding-bottom: 16px;
+}
+
+.diagnosticlist {
+	width: 766px;
+	height: 349px;
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	border-radius: 16px;
+	opacity: 1;
+	margin-left: 32px;
+	overflow-y: scroll;
+}
+
+.diagnosticlist::-webkit-scrollbar {
+	width: 6px;
+	border-radius: 3px;
+	opacity: 1;
+}
+
+.diagnosticlist::-webkit-scrollbar-thumb {
+	background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+	background: #072635 0% 0% no-repeat padding-box;
+}
+
+.diagnosticlist::-webkit-scrollbar-track {
+	width: 6px;
+	height: 941px;
+	background: #e3e4e6 0% 0% no-repeat padding-box;
+	border-radius: 3px;
+	opacity: 1;
+}
+
+.diagnosticlist h2 {
+	width: 176px;
+	height: 33px;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800)
+		var(--unnamed-font-size-24) / var(--unnamed-line-spacing-33)
+		var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal 800 24px/33px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	margin: 0 0 40px 20px;
+	padding-top: 20px;
+	text-wrap: nowrap;
+}
+
+.listheader {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 20px;
+	width: 726px;
+	height: 48px;
+	background: #f6f7f8 0% 0% no-repeat padding-box;
+	border-radius: 24px;
+	opacity: 1;
+}
+
+.headername {
+	width: 129px;
+	margin: 0 104px 0 36px;
+	font-weight: bold;
+}
+
+.headerdesc {
+	width: 287px;
+	margin-right: 34px;
+	font-weight: bold;
+}
+
+.headerstatus {
+	width: 79px;
+	font-weight: bold;
+}
+
+.condition {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0 20px;
+	width: 723px;
+	height: 59px;
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+.conditionname {
+	width: 129px;
+	margin: 0 104px 0 36px;
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal normal 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	font-weight: 500;
+}
+
+.conditiondescription {
+	width: 287px;
+	margin-right: 34px;
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal normal 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	font-weight: 500;
+}
+
+.conditionstatus {
+	width: 79px;
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-072635);
+	text-align: left;
+	font: normal normal normal 14px/19px Manrope;
+	letter-spacing: 0px;
+	color: #072635;
+	opacity: 1;
+	font-weight: 500;
 }

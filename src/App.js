@@ -3,6 +3,7 @@ import Navbar from "./Components/Nav";
 import PatientPanel from "./Components/Patient-panel";
 import { useState, useEffect } from "react";
 import PatientHistory from "./Components/PatientHistory";
+import DiagnosticList from "./Components/DiagnosticList";
 
 function App() {
 	const [patientlist, setPatientList] = useState();
@@ -37,7 +38,13 @@ function App() {
 			<body>
 				<div className="patientdetails">
 					<PatientPanel patientlist={patientlist} />
-					<PatientHistory patientlist={patientlist} />
+					<div className="middlecolumn">
+						<PatientHistory patientlist={patientlist} />
+            <DiagnosticList patientlist={patientlist} />
+					</div>
+          <div className="rightcolumn">
+            
+          </div>
 				</div>
 			</body>
 		</div>

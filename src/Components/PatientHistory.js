@@ -1,6 +1,17 @@
 import { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 import {
+	getLabels,
+	getDiastolic,
+	getSystolic,
+} from "../Utils/PatientHistoryUtils";
+import { data, options } from "../Utils/chartconfig";
+import upArrow from "../Images/ArrowUp.svg";
+import respiratorypic from "../Images/respiratory rate.svg";
+import temperaturepic from "../Images/temperature.svg";
+import HRpic from "../Images/HeartBPM.svg";
+import expandMore from "../Images/expand_more.svg";
+import {
 	Chart,
 	CategoryScale,
 	LinearScale,
@@ -10,6 +21,7 @@ import {
 	Tooltip,
 	Legend,
 } from "chart.js";
+import PatientStatBlock from "./PatientStatBlocks";
 
 Chart.register(
 	CategoryScale,
@@ -27,9 +39,11 @@ export default function PatientHistory(props) {
 	const [labels, setLabels] = useState();
 	const [diastolic, setDiastolic] = useState();
 	const [systolic, setSystolic] = useState();
+	const [systolicAverage, setSystolicAverage] = useState();
+	const [diastolicAverage, setDiastolicAverage] = useState();
 
-	//Filters patient list to selected patient
 	useEffect(() => {
+		//Filters patient list to selected patient
 		if (props.patientlist) {
 			const filterPatient = () => {
 				return props?.patientlist?.filter(
@@ -39,70 +53,18 @@ export default function PatientHistory(props) {
 
 			setSelectedPatient(filterPatient);
 
-			console.log(selectedPatient[0]);
-
+			//Takes selected patient and gets labels, and bp values and averages
 			if (selectedPatient[0] !== undefined) {
-				const getLabels = selectedPatient[0]?.diagnosis_history
-					?.slice(0, 6)
-					.map((label) => {
-						return `${label.month.slice(0,3)}, ${label.year}`;
-					});
+				setLabels(getLabels(selectedPatient[0]).reverse());
 
-				setLabels(getLabels.reverse());
+				setDiastolic(getDiastolic(selectedPatient[0], setDiastolicAverage));
 
-				const getDiastolic = selectedPatient[0]?.diagnosis_history
-					?.slice(0, 6)
-					.map((pressure) => {
-						return pressure.blood_pressure.diastolic?.value;
-					});
-
-				setDiastolic(getDiastolic);
-
-				const getSystolic = selectedPatient[0]?.diagnosis_history
-					?.slice(0, 6)
-					.map((pressure) => {
-						return pressure.blood_pressure.systolic?.value;
-					});
-
-				setSystolic(getSystolic);
+				setSystolic(getSystolic(selectedPatient[0], setSystolicAverage));
 			}
 		}
 	}, [props.patientlist, selectedPatient[0]]);
 
 	//Sets up labels for the chart using the month and year of the selected patient
-
-	console.log(diastolic);
-	console.log(systolic);
-	const options = {
-		responsive: true,
-		maintainAspectRatio: false,
-		plugins: {
-			legend: {
-				display: false,
-			},
-		},
-	};
-	const data = {
-		labels: labels,
-		datasets: [
-			{
-				label: "Diastolic",
-				data: diastolic,
-				backgroundColor: "#8C6FE6",
-				borderColor: "#7E6CAB",
-				pointRadius: 8,
-				tension: 0.5,
-			},
-			{
-				label: "Systolic",
-				data: systolic,
-				backgroundColor: "#E66FD2",
-				borderColor: "#C26EB4",
-				pointRadius: 8,
-				tension: 0.5,
-			},
-		],
-	};
 
 	console.log(selectedPatient);
 	console.log(labels);
@@ -112,22 +74,79 @@ export default function PatientHistory(props) {
 			<h2>Diagnosis History</h2>
 			<div className="bphistory">
 				<div className="bpchart">
-					<h3>Blood Pressure</h3>
+					<div className="bpheader">
+						<h3>Blood Pressure</h3>
+						<div className="chartfilter">
+							<p>Last 6 months</p>
+							<img
+								src={expandMore}
+								alt="a down arrow"
+							/>
+						</div>
+					</div>
 					<Line
 						id="linechart"
 						height="187px"
 						options={options}
-						data={data}
+						data={data(labels, diastolic, systolic)}
 					/>
 				</div>
 				<div className="legend">
-                    <div className="systolic">
-                        <h4>Systolic</h4>
-                    </div>
-                    <div className="diastolic">
-                        <h4>Diastolic</h4>
-                    </div>
-                </div>
+					<div className="systolic">
+						<div className="systoliclegend">
+							<div className="systolicdot"></div>
+							<h4>Systolic</h4>
+						</div>
+						<div className="systolicrate">{systolic?.slice(5)}</div>
+						<div className="systolicaverage">
+							<img
+								src={upArrow}
+								alt="An up arrow"
+								className="arrowup"
+							/>
+							{systolicAverage}
+						</div>
+					</div>
+					<div className="bpdivider"></div>
+					<div className="diastolic">
+						<div className="diastoliclegend">
+							<div className="diastolicdot"></div>
+							<h4>Diastolic</h4>
+						</div>
+						<div className="diastolicrate">{diastolic?.slice(5)}</div>
+						<div className="diastolicaverage">
+							<img
+								src={upArrow}
+								alt="An up arrow"
+								className="arrowup"
+							/>
+							{diastolicAverage}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="patientstatblocks">
+				<PatientStatBlock
+					selectedPatient={selectedPatient}
+					blockType={"respiratory"}
+					pic={respiratorypic}
+					name="Respiratory"
+					suffix="bpm"
+				/>
+				<PatientStatBlock
+					selectedPatient={selectedPatient}
+					blockType={"temperature"}
+					pic={temperaturepic}
+					name="Temperature"
+					suffix="&deg;F"
+				/>
+				<PatientStatBlock
+					selectedPatient={selectedPatient}
+					blockType={"heartRate"}
+					pic={HRpic}
+					name="Heart Rate"
+					suffix="bpm"
+				/>
 			</div>
 		</div>
 	);
