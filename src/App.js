@@ -4,6 +4,8 @@ import PatientPanel from "./Components/Patient-panel";
 import { useState, useEffect } from "react";
 import PatientHistory from "./Components/PatientHistory";
 import DiagnosticList from "./Components/DiagnosticList";
+import PatientProfile from "./Components/PatientProfile";
+import LabResults from "./Components/LabResults";
 
 function App() {
 	const [patientlist, setPatientList] = useState();
@@ -40,11 +42,12 @@ function App() {
 					<PatientPanel patientlist={patientlist} />
 					<div className="middlecolumn">
 						<PatientHistory patientlist={patientlist} />
-            <DiagnosticList patientlist={patientlist} />
+						<DiagnosticList patientlist={patientlist} />
 					</div>
-          <div className="rightcolumn">
-            
-          </div>
+					<div className="rightcolumn">
+						<PatientProfile patientlist={patientlist} />
+						<LabResults patientlist={patientlist} />
+					</div>
 				</div>
 			</body>
 		</div>

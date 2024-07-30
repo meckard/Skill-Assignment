@@ -1,6 +1,4 @@
 import searchicon from "../Images/searchIcon.png";
-import ListPatient from "./ListPatient";
-import {useState, useEffect} from "react";
 import moreHorizontal from '../Images/moreHorizontal.png'
 
 export default function PatientPanel(props) {
@@ -17,7 +15,7 @@ export default function PatientPanel(props) {
 					alt="A magnifying glass icon"
 				/>
 			</div>
-			<div>
+			<div className="patientlist">
 				{props.patientlist?.map((patient) => {
 					return (
 						<div className="listpatient">
